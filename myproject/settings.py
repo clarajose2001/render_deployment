@@ -83,8 +83,9 @@ DEBUG = config('DEBUG', cast=bool)
 
 from decouple import config
 
-ALLOWED_HOSTS = config('ALLOWED_HOSTS', default=[], cast=lambda v: [s.strip() for s in v.split(',')])
 
+
+ALLOWED_HOSTS = ['render-deployment-7e5n.onrender.com', 'localhost' , '127.0.0.1']
 
 
 # Password validation
